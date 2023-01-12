@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Avenir;
+    src: url("./assets/fonts/avenir-lt-std-85-heavy.otf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +10,8 @@
 
 body {
     background-color: #ffffff;
+    font-family: 'Avenir';
+    font-style: italic;
 }
 
 a {
@@ -13,13 +20,15 @@ a {
 }
 
 #header1 {
-    /* width: 98.792vw; */
     width: 100%;
+    height: 70px;
     background-color: #0C5188;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
-    gap: 700px;
+    gap: 40%;
+    border-bottom: 1px solid #ffffff;
+    font-weight: bold;
 }
 
 #lado-esquerdo-header1,
@@ -27,7 +36,7 @@ a {
     padding: 21px 0px 27px 0px;
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: 25px;
 }
 
 #lado-esquerdo-header1 a+a {
@@ -39,6 +48,73 @@ a {
     align-items: flex-end;
 }
 
+.icon-home-header1 {
+    margin-top: 5px;
+}
+
 #lado-direito-header1 {
     align-items: center;
 }
+
+.button-colaborador {
+    background-color: #FE5007;
+    color: #ffffff;
+    border: 1px solid #000000;
+    margin-bottom: 5px;
+    padding: 5px 22px;
+    border-radius: 1px;
+    font-family: 'Avenir';
+    font-style: italic;
+}
+
+/* ------------------------------------HEADER 2 */
+
+#header2 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 165px;
+    margin: -1px;
+}
+
+.img-30anosiel-header2 {
+    position: relative;
+    left: -100px;
+}
+
+/* ---------------------------------HEADER 3 */
+
+#header3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ffffff;
+    font-weight: bold;
+}
+
+.div-botoes-header3 {
+    background-color: #0C5188;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+}
+
+#header3 button {
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    padding: 15px 38px;
+    color: #ffffff;
+    background-color: transparent;
+    font-family: 'Avenir';
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.div-botoes-header3 a+a {
+    border-left: 1px solid #000000;
+}
+
+/* --------------------------- MAIN */
