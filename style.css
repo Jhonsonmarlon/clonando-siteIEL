@@ -29,8 +29,7 @@ a {
 #header1 {
     width: 100%;
     height: 70px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(176deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: RGB(32, 76, 123);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -117,8 +116,7 @@ a {
 }
 
 .div-botoes-header3 {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(176deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: RGB(32, 76, 123);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -159,7 +157,7 @@ a {
 
 .sub-div-botoes-header3 {
     border-radius: 10px;
-    background-color: #0C5188;
+    background: RGB(32, 76, 123)
 }
 
 ul li .width-sub-div {
