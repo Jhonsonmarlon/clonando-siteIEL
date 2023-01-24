@@ -29,13 +29,18 @@ a {
 #header1 {
     width: 100%;
     height: 70px;
-    background-color: #0C5188;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(176deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     gap: 40%;
     border-bottom: 1px solid #ffffff;
     font-weight: bold;
+}
+
+#lado-esquerdo-header1 a:hover {
+    color: #000000;
 }
 
 #lado-esquerdo-header1,
@@ -112,29 +117,79 @@ a {
 }
 
 .div-botoes-header3 {
-    background-color: #0C5188;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(176deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2px;
+    list-style: none;
 }
+
+.div-botoes-header3 li {
+    list-style: none;
+}
+
+.div-botoes-header3 li:hover ul,
+.div-botoes-header3 li.over ul {
+    display: block;
+}
+
+.div-botoes-header3 li ul {
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+
+.div-botoes-header3 li ul li {
+    display: block;
+    text-align: center;
+    width: 210px;
+}
+
+.div-botoes-header3 li+li {
+    border-left: 1px solid #000000;
+}
+
+.sub-div-botoes-header3 li+li {
+    border: none;
+}
+
+.sub-div-botoes-header3 {
+    border-radius: 10px;
+    background-color: #0C5188;
+}
+
+ul li .width-sub-div {
+    margin-left: -50px;
+}
+
+ul li .width-sub-div li {
+    width: 270px;
+}
+
 
 #header3 button {
     cursor: pointer;
     border: none;
     width: fit-content;
-    padding: 15px 38px;
     color: #ffffff;
     background-color: transparent;
     font-family: 'Avenir';
-    font-size: medium;
     font-style: italic;
     font-weight: bold;
 }
 
-.div-botoes-header3 a+a {
-    border-left: 1px solid #000000;
+.opcao {
+    padding: 15px 38px;
+    font-size: medium;
+}
+
+.sub-opcao {
+    padding: 15px 5px;
+    font-size: 16px;
 }
 
 /* --------------------------- MAIN */
