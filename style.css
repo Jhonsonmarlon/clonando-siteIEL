@@ -132,9 +132,12 @@ a {
     list-style: none;
 }
 
-.div-botoes-header3 li:hover ul,
-.div-botoes-header3 li.over ul {
+.div-botoes-header3 li:hover ul {
     display: block;
+}
+
+.div-botoes-header3 li:after ul {
+    display: none;
 }
 
 .div-botoes-header3 li ul {
